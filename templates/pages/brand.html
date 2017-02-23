@@ -1,0 +1,9 @@
+---
+brand:
+    products:
+        limit: {{theme_settings.brandpage_products_per_page}}
+---
+{{inject "brandProductsPerPage" theme_settings.brandpage_products_per_page}}
+{{inject "brandProducts" brand.products}}
+
+{{> layout/communicator}}

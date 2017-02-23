@@ -1,0 +1,9 @@
+---
+category:
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{inject (concat "category." category.id ".products") category.products}}
+
+{{> layout/communicator}}
